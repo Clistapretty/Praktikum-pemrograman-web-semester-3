@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>06 - Footer - Sebelum</title>
+</head>
+<body>
+    <style>
+    /* Footer */
+    footer {
+        background-color: #222;
+        color: white;
+        padding: 50px;
+    }
+
+    /* 4 kolom */
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    /* Judul setiap kolom */
+    .footer-container h3 {
+        margin-bottom: 20px;
+    }
+
+    /* Menghilangkan bullet */
+    .footer-container ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Link */
+    .footer-container a {
+        color: #ccc;
+        text-decoration: none;
+    }
+
+    .footer-container a:hover {
+        color: white;
+    }
+
+    /* Jarak antar link */
+    .footer-container li {
+        margin-bottom: 10px;
+    }
+
+    /* Copyright */
+    .copyright {
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 1px solid #555;
+        text-align: center;
+        color: #aaa;
+    }
+</style>
+
+<footer>
+
+    <div class="footer-container">
+
+        <div>
+            <h3>Tentang Kami</h3>
+            <p>
+                Kami menyediakan produk berkualitas dengan
+                pelayanan terbaik untuk pelanggan.
+            </p>
+        </div>
+
+        <div>
+            <h3>Menu</h3>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Produk</a></li>
+                <li><a href="#">Tentang</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Layanan</h3>
+            <ul>
+                <li><a href="#">Bantuan</a></li>
+                <li><a href="#">Pengiriman</a></li>
+                <li><a href="#">Pembayaran</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Hubungi Kami</h3>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">WhatsApp</a></li>
+                <li><a href="#">Email</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        &copy; 2026 Nama Website. All Rights Reserved.
+    </div>
+
+</footer>
+    <!-- 
+    INSTRUKSI PENGERJAAN:
+    1. Beri background gelap pada <footer>, warna teks putih/terang, dan padding yang cukup luas (misal padding: 50px).
+    2. Jadikan class ".footer-container" sebagai CSS Grid dengan "grid-template-columns: repeat(4, 1fr)" agar membentuk 4 kolom sejajar, beri gap antar kolom.
+    3. Hilangkan bullet pada <ul>, ubah warna link <a> agar kontras (misal abu-abu terang), dan hilangkan garis bawah.
+    4. Tambahkan jarak (margin) pada tiap <h3>.
+    5. Bagian hak cipta (copyright) diatur di bawah dengan teks ditengah (text-align: center) dan garis atas (border-top).
+    -->
+   

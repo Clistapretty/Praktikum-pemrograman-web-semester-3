@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>05 - Pricing Table - Sebelum</title>
+</head>
+<body>
+    <style>
+    /* Container untuk 3 paket */
+    .pricing-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        min-height: 100vh;
+        background-color: #f5f5f5;
+    }
+
+    /* Gaya dasar setiap kartu */
+    .plan {
+        width: 250px;
+        padding: 25px;
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        background-color: white;
+        text-align: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Paket yang paling populer */
+    .plan.popular {
+        transform: scale(1.05);
+        border: 2px solid #3498db;
+    }
+
+    /* Header paket popular */
+    .popular h2 {
+        color: #3498db;
+    }
+
+    /* Menghilangkan bullet pada daftar */
+    .plan ul {
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+    }
+
+    .plan li {
+        margin: 10px 0;
+    }
+
+    /* Harga */
+    .price {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    /* Tombol */
+    .plan button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 6px;
+        background-color: #3498db;
+        color: white;
+        cursor: pointer;
+    }
+
+    .plan button:hover {
+        background-color: #2980b9;
+    }
+</style>
+
+<div class="pricing-container">
+
+    <!-- Paket Basic -->
+    <div class="plan">
+        <h2>Basic</h2>
+        <p class="price">Rp 50.000</p>
+
+        <ul>
+            <li>1 User</li>
+            <li>5 GB Penyimpanan</li>
+            <li>Email Support</li>
+        </ul>
+
+        <button>Pilih Paket</button>
+    </div>
+
+    <!-- Paket Popular -->
+    <div class="plan popular">
+        <h2>Popular</h2>
+        <p class="price">Rp 100.000</p>
+
+        <ul>
+            <li>5 User</li>
+            <li>50 GB Penyimpanan</li>
+            <li>Priority Support</li>
+        </ul>
+
+        <button>Pilih Paket</button>
+    </div>
+
+    <!-- Paket Premium -->
+    <div class="plan">
+        <h2>Premium</h2>
+        <p class="price">Rp 200.000</p>
+
+        <ul>
+            <li>Unlimited User</li>
+            <li>100 GB Penyimpanan</li>
+            <li>24/7 Support</li>
+        </ul>
+
+        <button>Pilih Paket</button>
+    </div>
+
+</div>
+    <!-- 
+    INSTRUKSI PENGERJAAN:
+    1. Gunakan CSS Grid atau Flexbox pada ".pricing-container" untuk menyejajarkan 3 paket secara horizontal.
+    2. Berikan gaya dasar pada setiap kartu ".plan" (border, padding, border-radius, background putih, text-align center).
+    3. Khusus untuk paket tengah (berikan class .popular), ubah ukuran agar sedikit lebih menonjol (transform: scale(1.05) atau padding lebih besar).
+    4. Ubah warna border/header pada paket popular untuk membedakannya.
+    5. Hilangkan bullet pada daftar fitur (ul) dan berikan jarak.
+    -->
+    

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>09 - Testimoni - Sebelum</title>
+</head>
+<body>
+    <!-- 
+    INSTRUKSI PENGERJAAN:
+    1. Atur container ".testimonial-grid" menggunakan CSS Grid. Gunakan grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) dan beri gap.
+    2. Berikan gaya pada kartu (background, padding, border-radius, shadow ringan).
+    3. Buat posisi kartu menjadi "position: relative". 
+    4. Gunakan pseudo-element "::before" pada kartu untuk menambahkan karakter tanda kutip besar (content: '"') di pojok kiri atas sebagai watermark (ukuran sangat besar, warna sangat pudar, z-index rendah).
+    5. Rapikan elemen gambar profil dan nama (bisa menggunakan flexbox untuk menjejerkannya secara horizontal).
+    -->
+    <style>
+    /* 1. Container testimonial */
+    .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    /* 2. Kartu testimonial */
+    .testimonial-card {
+        background-color: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden;
+    }
+
+    /* 3 & 4. Tanda kutip sebagai watermark */
+    .testimonial-card::before {
+        content: '"';
+        position: absolute;
+        top: -25px;
+        left: 10px;
+        font-size: 120px;
+        color: rgba(0, 0, 0, 0.05);
+        z-index: 0;
+    }
+
+    /* Isi kartu berada di atas watermark */
+    .testimonial-card > * {
+        position: relative;
+        z-index: 1;
+    }
+
+    /* 5. Foto dan nama */
+    .profile {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .profile img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .profile h4 {
+        margin: 0;
+    }
+
+    .testimonial-card p {
+        line-height: 1.6;
+    }
+</style>
+
+<div class="testimonial-grid">
+
+    <div class="testimonial-card">
+        <p>
+            "Produknya sangat bagus dan pelayanannya juga cepat.
+            Saya sangat puas dengan hasilnya."
+        </p>
+
+        <div class="profile">
+            <img src="https://i.pravatar.cc/100?img=1" alt="Andi">
+            <h4>Andi</h4>
+        </div>
+    </div>
+
+    <div class="testimonial-card">
+        <p>
+            "Pelayanannya ramah dan produknya sesuai dengan
+            yang saya harapkan. Sangat recommended!"
+        </p>
+
+        <div class="profile">
+            <img src="https://i.pravatar.cc/100?img=2" alt="Siti">
+            <h4>Siti</h4>
+        </div>
+    </div>
+
+    <div class="testimonial-card">
+        <p>
+            "Pengiriman cepat dan kualitas produknya sangat
+            memuaskan. Saya pasti akan membeli lagi."
+        </p>
+
+        <div class="profile">
+            <img src="https://i.pravatar.cc/100?img=3" alt="Budi">
+            <h4>Budi</h4>
+        </div>
+    </div>
+
