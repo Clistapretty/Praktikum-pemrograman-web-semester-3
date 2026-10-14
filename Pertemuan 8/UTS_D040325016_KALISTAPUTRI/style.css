@@ -1,0 +1,109 @@
+
+/* ===== DASHBOARD ===== */
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f6f9;
+}
+
+.sidebar {
+    width: 250px;
+    flex-shrink: 0;
+    background-color: #212529;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+}
+
+.sidebar a:hover {
+    background-color: #343a40;
+}
+
+.main-content {
+    flex: 1;
+    padding: 30px;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+/* ===== FORM JURNAL UMUM ===== */
+.form-jurnal {
+    background-color: white;
+    max-width: 700px;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.form-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    width: 150px;
+    flex-shrink: 0;
+    padding-top: 10px;
+}
+
+.form-row input,
+.form-row select,
+.form-row textarea {
+    flex: 1;
+    min-width: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.form-row input[type="radio"] {
+    flex: initial;
+}
+
+/* ===== LAPORAN LABA RUGI ===== */
+.tabel-laporan {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.tabel-laporan th {
+    background-color: #343a40;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+.tabel-laporan td {
+    padding: 12px;
+    border: 1px solid #dee2e6;
+}
+
+.tabel-laporan tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tabel-laporan .total {
+    font-weight: bold;
+}
+
+.tabel-laporan .nominal {
+    text-align: right;
+}

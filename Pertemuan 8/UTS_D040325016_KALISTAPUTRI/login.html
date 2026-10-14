@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login SIA Terpadu - PT PRIMA AKUNTINDO</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 1. Pengaturan Latar Belakang (Body) & Flexbox untuk Mengetengahkan */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f616; /* Abu-abu terang (kode warnanya sesuai 2 angka terakhir nim) */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Mengetengahkan secara horizontal */
+            align-items: center;     /* Mengetengahkan secara vertikal */
+            height: 100vh;           /* Memenuhi tinggi penuh layar bodi */
+        }
+
+        /* 2. Desain Kotak Form Login (Card) */
+        .login-card {
+            background-color: #ffffff; /* Latar belakang putih */
+            padding: 30px;
+            border-radius: 8px;        /* Sudut melengkung */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Box-shadow tipis */
+            width: 320px;
+            text-align: center;
+        }
+
+        /* 3. Tipografi Judul */
+        .login-card h2 {
+            margin: 0 0 5px 0;
+            font-size: 1.2rem;
+            color: #333;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .login-card p {
+            margin: 0 0 20px 0;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* 4. Desain Input Field */
+        .input-group {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 0.85rem;
+            color: #444;
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 0.9rem;
+        }
+
+        /* 5. Desain Tombol MASUK SISTEM */
+        .btn-submit {
+            width: 100%;
+            padding: 12px;
+            background-color: #0d6e16; /* Warna hijau sesuai ketentuan */
+            color: white;              /* Teks putih */
+            border: none;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            text-transform: uppercase;
+        }
+
+        /* Efek ketika kursor di atas tombol (Hover) */
+        .btn-submit:hover {
+            background-color: #0b5ed7; /* Warna biru sedikit lebih gelap */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Kotak Form Login (Card) -->
+    <div class="login-card">
+        <h2>PT PRIMA AKUNTINDO</h2>
+        <p>Login SIA Terpadu</p>
+        
+        <form>
+            <!-- Input Username -->
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Masukkan username" required>
+            </div>
+            
+            <!-- Input Password -->
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="••••••••" required>
+            </div>
+            
+            <!-- Tombol Submit -->
+            <button type="submit" class="btn-submit">Masuk Sistem</button>
+        </form>
+    </div>
+
+</body>
+</html>

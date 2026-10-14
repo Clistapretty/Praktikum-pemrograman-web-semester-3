@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Laba Rugi</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            color: #333;
+        }
+        
+        /* Gaya untuk Judul Laporan */
+        .judul-laporan {
+            text-align: center;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        /* Ketentuan Desain CSS Tabel */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #bbbbbb;
+            padding: 10px;
+            text-align: left;
+        }
+
+        /* Header dengan latar abu-abu gelap dan teks putih */
+        th {
+            background-color: #555555;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        /* Zebra-striping untuk baris genap di dalam tbody */
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        /* Perataan kanan untuk kolom nominal */
+        .kolom-nominal {
+            text-align: right;
+        }
+
+        /* Baris terakhir (Total Laba Bersih) dicetak tebal */
+        .total-row {
+            font-weight: bold;
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bagian Judul Laporan -->
+    <div class="judul-laporan">
+        PT PRIMA AKUNTINDO<br>
+        LAPORAN LABA RUGI<br>
+        Per 31 Oktober 2026
+    </div>
+
+    <!-- Bagian Tabel Utama -->
+    <table>
+        <thead>
+            <tr>
+                <th>Kode</th>
+                <th>Keterangan Akun</th>
+                <th>Nominal (Rp)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>4101</td>
+                <td>Pendapatan Jasa</td>
+                <td class="kolom-nominal">120.000.000</td>
+            </tr>
+            <tr>
+                <td>5101</td>
+                <td>Beban Gaji Karyawan</td>
+                <td class="kolom-nominal">30.000.000</td>
+            </tr>
+            <tr>
+                <td>5102</td>
+                <td>Beban Sewa Gedung</td>
+                <td class="kolom-nominal">10.000.000</td>
+            </tr>
+            <tr>
+                <td>5103</td>
+                <td>Beban Perlengkapan</td>
+                <td class="kolom-nominal">2.500.000</td>
+            </tr>
+            <!-- Baris Total Laba Bersih -->
+            <tr class="total-row">
+                <td colspan="2">TOTAL LABA BERSIH</td>
+                <td class="kolom-nominal">77.500.000</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Input Jurnal Umum</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 25px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        /* Ketentuan 2: Label di kiri sejajar dengan lebar 150px */
+        label.form-label {
+            width: 150px;
+            display: inline-block;
+            font-weight: bold;
+            padding-top: 5px;
+        }
+
+        /* Ketentuan 3: Memberikan padding agar user friendly */
+        .input-field {
+            flex: 1;
+            padding: 6px 10px;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        textarea.input-field {
+            height: 60px;
+            resize: vertical;
+        }
+
+        .radio-group {
+            flex: 1;
+            padding-top: 5px;
+        }
+
+        .radio-group label {
+            margin-right: 15px;
+            font-weight: normal;
+            cursor: pointer;
+        }
+
+        .button-group {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+        button {
+            padding: 8px 16px;
+            margin: 0 5px;
+            border: 1px solid #666;
+            background-color: #e0e0e0;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        button:hover {
+            background-color: #d4d4d4;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Form Input Jurnal Umum</h2>
+    
+    <form action="#" method="POST">
+        <!-- Tanggal Transaksi -->
+        <div class="form-group">
+            <label class="form-label">Tanggal Transaksi</label>
+            <input type="date" class="input-field" required>
+        </div>
+
+        <!-- No. Bukti -->
+        <div class="form-group">
+            <label class="form-label">No. Bukti</label>
+            <input type="text" class="input-field" required>
+        </div>
+
+        <!-- Keterangan -->
+        <div class="form-group">
+            <label class="form-label">Keterangan</label>
+            <textarea class="input-field" required></textarea>
+        </div>
+
+        <!-- Nama Akun -->
+        <div class="form-group">
+            <label class="form-label">Nama Akun</label>
+            <select class="input-field" required>
+                <option value="">-- Pilih Akun --</option>
+                <option value="kas">Kas</option>
+                <option value="piutang">Piutang Usaha</option>
+                <option value="perlengkapan">Perlengkapan</option>
+                <option value="pendapatan">Pendapatan</option>
+                <option value="beban">Beban Operasional</option>
+            </select>
+        </div>
+
+        <!-- Posisi Saldo -->
+        <div class="form-group">
+            <label class="form-label">Posisi Saldo</label>
+            <div class="radio-group">
+                <input type="radio" id="debit" name="posisi_saldo" value="Debit" checked>
+                <label for="debit">Debit</label>
+                
+                <input type="radio" id="kredit" name="posisi_saldo" value="Kredit">
+                <label for="kredit">Kredit</label>
+            </div>
+        </div>
+
+        <!-- Nominal (Rp) -->
+        <div class="form-group">
+            <label class="form-label">Nominal (Rp)</label>
+            <input type="number" class="input-field" min="0" required>
+        </div>
+
+        <!-- Tombol Aksi -->
+        <div class="button-group">
+            <button type="submit">[ SIMPAN TRANSAKSI ]</button>
+            <button type="reset">[ BATAL ]</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
